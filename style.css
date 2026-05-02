@@ -1,0 +1,49 @@
+body{
+    max-width: 1200px;
+    background-color: red;
+    height: 1000px;
+}
+img{
+    width: 100%;
+}
+
+nav ul{
+    color: white;
+    font-size: 50px;
+    display: flex;
+  
+}
+nav ul li{
+      margin-left: 100px;
+      list-style-type: none ;
+}
+
+
+@media (max-width : 1000px){
+  body{
+    background-color: brown;
+  } 
+  h1{
+    background-color: aqua;
+  }  
+  nav ul{
+        flex-direction: column;
+    }
+}
+@media (max-width: 500px){
+    body{
+        background-color: blue;
+    }
+    h1{
+        background-color: chartreuse;
+    }
+    
+}
+/*! INGREDIENTS TO CREATE A RESPONSIVE DESIGN*/
+
+/*1. fluid container*/
+/** max-width*/
+/*2. responsive unit*/
+/*percentage*/
+/* flexible images */
+/*media Queries*/

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NAEL.dev - Portfolio</title>
+    <link rel="stylesheet" href="personal portifolio.css">
+</head>
+<body>
+
+    <section id="home-section"> 
+        <header>
+            <nav>
+                <div class="nav-inner">
+                    <div class="logo">
+                        <a href="#">NAEL.dev</a>
+                    </div>
+
+                    <!-- Hamburger button for mobile -->
+                    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+
+                    <ul class="nav-links" id="nav-links">
+                        <li><a href="#home-section" class="active">Home</a></li>
+                        <li><a href="#about-section">About</a></li>
+                        <li><a href="#skill-section">Skills</a></li>
+                        <li><a href="#contact-section">Contact</a></li>
+                        <li><button class="btn1"><a href="#">Hire me</a></button></li>
+                    </ul>
+                </div>
+            </nav>
+            <hr>
+        </header>
+
+        <div class="parent1">
+            <button class="btn2"><a href="#">&#x2022; Available for work</a></button>
+        </div>
+
+        <div class="hero-layout">
+            <div class="parent2">
+                <h1>Hi, I'm <span>Shingiro Nael</span></h1>
+                <h2>Software Developer</h2>
+                <p>Level 3 developer with 3+ years building web and mobile apps.
+                    Passionate about clean code, intuitive UX, and scalable systems.</p>
+
+                <div class="parent3">
+                    <button class="btn3"><a href="#">View my work</a></button>
+                    <button class="btn4"><a href="#">Download CV</a></button>
+                </div>
+
+                <div class="parent4">
+                    <div class="stat">
+                        <h3>1+</h3>
+                        <span>Years exp</span>
+                    </div>
+                    <div class="stat">
+                        <h3>17</h3>
+                        <span>Projects</span>
+                    </div>
+                    <div class="stat">
+                        <h3>10</h3>
+                        <span>Clients</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="profile-img-wrapper">
+                <img src="1000004032.jpg" alt="Shingiro Nael" class="profile-img" />
+            </div>
+        </div>
+
+    </section>
+
+    <section class="about" id="about-section">
+     <div class="about-img">
+        <img src="1000004032.jpg" alt="">
+     </div>
+     <div class="about-text">
+     <h2>About <span>Me</span></h2>
+     <h4>Frontend Developer</h4>
+     <p>Level 3 developer with 3+ years building web and mobile apps. <br>
+                    Passionate about clean code, intuitive UX, and scalable systems.</p>
+                    </div>
+                   <button class="btn3"><a href="#" class="btn-box">More About Me</a></button> 
+    </section>
+
+    <section class="skills" id="skill-section">
+        <h1>My <span>Skills</span></h1>
+        <div class="skills-list">
+            <button class="btn5"><a href="#">HTML <br>90%</a></button>
+            <button class="btn6"><a href="#">CSS <br>80%</a></button>
+            <button class="btn7"><a href="#">JAVASCRIPT <br>60%</a></button>
+        </div>
+    </section>
+
+    <section id="contact-section" class="contact-section">
+        <div class="contact-grid">
+            
+            <div class="contact-left">
+                <h1>Contact <span>Me</span></h1>
+                <p>Let's work together — bring your ideas to life. I'm always excited to collaborate on creative projects and digital solutions.</p>
+                <ul class="contact-details">
+                    <li><span class="emoji">🧑‍💻</span> <strong>Name:</strong> Shingiro Nael</li>
+                    <li><span class="emoji">📞</span> <strong>Phone:</strong> <a href="tel:+250792831574">+250 792 831 574</a></li>
+                    <li><span class="emoji">📍</span> <strong>Location:</strong> Kigali, Rwanda</li>
+                    <li><span class="emoji">✉️</span> <strong>Email:</strong> <a href="mailto:naelshingiro@gmail.com">naelshingiro@gmail.com</a></li>
+                </ul>
+            </div>
+
+            <div class="contact-form">
+                <form action="#" method="post" id="portfolioContactForm">
+                    <div class="input-group">
+                        <input type="text" id="name" placeholder="Enter Your Name" required>
+                    </div>
+                    <div class="input-group">
+                        <input type="email" id="email" placeholder="Enter Your Email" required>
+                    </div>
+                    <div class="input-group">
+                        <input type="text" id="subject" placeholder="Enter Your Subject" required>
+                    </div>
+                    <div class="input-group">
+                        <textarea id="message" placeholder="Enter Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="send-btn">Send Message →</button>
+                    <p style="font-size: 0.75rem; margin-top: 12px; text-align: center; color:#9f8e7a;">I'll get back within 24h</p>
+                </form>
+            </div> 
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 NAEL.dev — Designed with passion & clean code. All rights reserved.</p>
+    </footer>
+
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('nav-links');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('open');
+            hamburger.classList.toggle('active');
+        });
+
+        
+        navLinks.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('open');
+                hamburger.classList.remove('active');
+            });
+        });
+    </script>
+</body>
+</html>
